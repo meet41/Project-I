@@ -1,4 +1,12 @@
 # Project-I
+## Dataset Link - StackOverflow
+- [Link - 1](https://stackexchange.com/digests)
+- [Link - 2](https://langdev.stackexchange.com/)
+- [Link - 3](https://data.stackexchange.com/)
+- [Link - 4](https://data.stackexchange.com/datascience/queries?order_by=everything)
+- [Link - 5](https://data.stackexchange.com/datascience/query/edit/1909796#resultSets)
+- [Perplexity - Link](https://www.perplexity.ai/search/apply-this-preprocessing-steps-nQmQttEzRJiCNuOZlSk2lA)
+
 # Text Preprocessing Steps:
 1. **Lowercasing:**  
    Converts all text to lowercase to ensure uniformity (e.g., "Apple" and "apple" are treated the same).
