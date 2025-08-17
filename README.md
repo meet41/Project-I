@@ -1,4 +1,32 @@
 # Project-I
+## Structure:
+```
+├── Datasets
+    ├── Divide Original
+    │   ├── original_part_1.csv
+    │   ├── original_part_2.csv
+    │   ├── original_part_3.csv
+    │   ├── original_part_4.csv
+    │   └── original_part_5.csv
+    ├── Preprocess Sets
+    │   ├── preprocessed_part_1.csv
+    │   ├── preprocessed_part_2.csv
+    │   ├── preprocessed_part_3.csv
+    │   ├── preprocessed_part_4.csv
+    │   └── preprocessed_part_5.csv
+    ├── Training Sets
+    │   ├── output_part_1.csv
+    │   ├── output_part_2.csv
+    │   ├── output_part_3.csv
+    │   ├── output_part_4.csv
+    │   └── output_part_5.csv
+    ├── original_questions_answers_dataset.csv
+    └── preprocessed_questions_answers_dataset.csv
+├── Project Models List.md
+├── README.md
+└── topic_modeling_models_with_metrics.md
+```
+
 ## Dataset Link - StackOverflow
 - [Link - 1](https://stackexchange.com/digests)
 - [Link - 2](https://langdev.stackexchange.com/)
