@@ -1,27 +1,34 @@
 # Project-I
 ## Structure:
+- [Github Repo Tree Visualize](https://readmecodegen.vercel.app/file-tree/file-tree-generator/github-file-tree-visualizer)
 ```
-├── Datasets
-    ├── Divide Original
-    │   ├── original_part_1.csv
-    │   ├── original_part_2.csv
-    │   ├── original_part_3.csv
-    │   ├── original_part_4.csv
-    │   └── original_part_5.csv
-    ├── Preprocess Sets
-    │   ├── preprocessed_part_1.csv
-    │   ├── preprocessed_part_2.csv
-    │   ├── preprocessed_part_3.csv
-    │   ├── preprocessed_part_4.csv
-    │   └── preprocessed_part_5.csv
-    ├── Training Sets
-    │   ├── output_part_1.csv
-    │   ├── output_part_2.csv
-    │   ├── output_part_3.csv
-    │   ├── output_part_4.csv
-    │   └── output_part_5.csv
-    ├── original_questions_answers_dataset.csv
-    └── preprocessed_questions_answers_dataset.csv
+├── Datasets/
+│   ├── Divide Original/
+│   │   ├── original_part_1.csv
+│   │   ├── original_part_2.csv
+│   │   ├── original_part_3.csv
+│   │   ├── original_part_4.csv
+│   │   └── original_part_5.csv
+│   ├── Preprocess Sets/
+│   │   ├── preprocessed_part_1.csv
+│   │   ├── preprocessed_part_2.csv
+│   │   ├── preprocessed_part_3.csv
+│   │   ├── preprocessed_part_4.csv
+│   │   └── preprocessed_part_5.csv
+│   ├── Training Sets/
+│   │   ├── output_part_1.csv
+│   │   ├── output_part_2.csv
+│   │   ├── output_part_3.csv
+│   │   ├── output_part_4.csv
+│   │   └── output_part_5.csv
+│   ├── original_questions_answers_dataset.csv
+│   └── preprocessed_questions_answers_dataset.csv
+├── Modelling/
+│   ├── Top2Vec_Model.ipynb
+│   ├── bert-implement.ipynb
+│   ├── bert-variants.ipynb
+│   ├── bert1.ipynb
+│   └── model-comparison.md
 ├── Project Models List.md
 ├── README.md
 └── topic_modeling_models_with_metrics.md
