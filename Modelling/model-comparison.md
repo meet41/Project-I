@@ -1,13 +1,12 @@
-# Current Version (Record: 600)
-| Model Name        | Accuracy | F1-Score | Precision | Recall | Training Time |
-|-------------------|----------|----------|-----------|--------|---------------|
-| Classical Bert    | 0.0500   | 0.0400   | 0.0357    | 0.0500 | 2002.17 sec   |
-| Distil Bert       | 0.0650   | 0.0471   | 0.04127   | 0.0600 | 3011.14 sec   |
-| RoBERTa Bert      | 0.0800   | 0.0091   | 0.0049    | 0.0790 | 3901.69s      |
-| AlBERT Bert       | 0.0750   | 0.0091   | 0.0049    | 0.0700 | 2422.72 sec   |
-| MobileBERT Bert   | 0.1966   | 0.0084   | 0.0916    | 0.0767 | 1228.76 sec   |
-| Electra Bert      | 0.1250   | 0.0725   | 0.0605    | 0.1250 | 2100.20 sec   |
-- not suit for large record,or either epochs be more than 12
+# Updated Current Version (Record: 200)
+| Model Name        | Accuracy | F1-Score | Precision | Recall |
+|-------------------|----------|----------|-----------|--------|
+| Classical Bert    | 0.0500   | 0.0400   | 0.035     | 0.0500 |
+| Distil Bert       | 0.480    | 0.478    | 0.573     | 0.480  |
+| RoBERTa Bert      | 0.482    | 0.421    | 0.423     | 0.482  | (✅)
+| AlBERT Bert       | 0.462    | 0.4578   | 0.532     | 0.4643 | (✅)
+| MobileBERT Bert   | 0.0666   | 0.0684   | 0.0816    | 0.0667 |
+| Electra Bert      | 0.2850   | 0.1225   | 0.2605    | 0.1050 | (✅)
 
 # Current Version (Record: 200 to 300)
 | Model Name        | Accuracy | F1-Score | Precision | Recall | Training Time |
@@ -40,6 +39,7 @@
 | MobileBERT Bert   | 2.50        | 0.24        | 0.60          | 2.50       | 103.19 ms     |
 | Electra Bert      | 5.00        | 2.14        | 1.36          | 5.00       | 280.20 ms     |
 | Top2Vec           | 8.50        | 2.18        | 1.30          | 8.50       | 200.20 ms     |
+
 
 
 
