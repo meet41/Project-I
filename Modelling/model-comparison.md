@@ -3,9 +3,13 @@
 |--------------------|----------|----------|-----------|--------|
 | Distil + RoBERTa   | 0.380    | 0.340    | 0.473     | 0.360  |
 | Distill + AlBERT   | 0.482    | 0.421    | 0.513     | 0.482  | 
-|Distil + MobileBERT | 0.340    | 0.314    | 0.320    | 0.3407  |
-| Roberta + Albert   | 0.2850   | 0.1225   | 0.2605    | 0.1050 |
-| Roberta + Electra  | 0.2850   | 0.1225   | 0.2605    | 0.1050 |
+|Distil + MobileBERT | 0.340    | 0.314    | 0.320     | 0.3407 |
+| Distil + Electra   | 0.450    | 0.440    | 0.500     | 0.450  |
+| Roberta + Albert   | 0.500    | 0.500    | 0.540     | 0.502  |
+|Roberta + MobileBERT| 0.320    | 0.270    | 0.310     | 0.302  |
+| Roberta + Electra  | 0.300    | 0.291    | 0.3100    | 0.270  |
+| Top2vec + Distil   | 0.500    | 0.500    | 0.5600    | 0.500  |
+-> | Top2vec + Roberta  | 0.500    | 0.500    | 0.5600    | 0.500  |
 
 # Updated Current Version (Record: 200)
 | Model Name        | Accuracy | F1-Score | Precision | Recall |
@@ -48,6 +52,7 @@
 | MobileBERT Bert   | 2.50        | 0.24        | 0.60          | 2.50       | 103.19 ms     |
 | Electra Bert      | 5.00        | 2.14        | 1.36          | 5.00       | 280.20 ms     |
 | Top2Vec           | 8.50        | 2.18        | 1.30          | 8.50       | 200.20 ms     |
+
 
 
 
