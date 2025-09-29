@@ -1,3 +1,12 @@
+# Hybrid Version (Record: 200)
+| Model Name         | Accuracy | F1-Score | Precision | Recall |
+|--------------------|----------|----------|-----------|--------|
+| Distil + RoBERTa   | 0.380    | 0.340    | 0.473     | 0.360  |
+| Distill + AlBERT   | 0.482    | 0.421    | 0.513     | 0.482  | 
+|Distil + MobileBERT | 0.340    | 0.314    | 0.320    | 0.3407  |
+| Roberta + Albert   | 0.2850   | 0.1225   | 0.2605    | 0.1050 |
+| Roberta + Electra  | 0.2850   | 0.1225   | 0.2605    | 0.1050 |
+
 # Updated Current Version (Record: 200)
 | Model Name        | Accuracy | F1-Score | Precision | Recall |
 |-------------------|----------|----------|-----------|--------|
@@ -39,6 +48,7 @@
 | MobileBERT Bert   | 2.50        | 0.24        | 0.60          | 2.50       | 103.19 ms     |
 | Electra Bert      | 5.00        | 2.14        | 1.36          | 5.00       | 280.20 ms     |
 | Top2Vec           | 8.50        | 2.18        | 1.30          | 8.50       | 200.20 ms     |
+
 
 
 
