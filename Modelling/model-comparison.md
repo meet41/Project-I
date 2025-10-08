@@ -3,9 +3,8 @@
 |--------------------|----------|----------|-----------|--------|
 | Distil + RoBERTa   | 0.990    | 0.990    | 0.990     | 0.990  |
 | RoBERTa + Electra  | 0.990    | 0.990    | 0.99      | 0.990  | 
-| Roberta + Mobile   | 0.99     | 0.99    | 0.99     | 0.997 |
-
--> | Top2vec + Roberta  | 0.500    | 0.500    | 0.5600    | 0.500  |
+| Roberta + Mobile   | 0.99     | 0.99     | 0.99      | 0.997  |
+|   Top2vec Model    | 0.980    | 0.980    | 0.980    | 0.980   |
 
 # Hybrid Version (Record: 200)
 | Model Name         | Accuracy | F1-Score | Precision | Recall |
@@ -61,6 +60,7 @@
 | MobileBERT Bert   | 2.50        | 0.24        | 0.60          | 2.50       | 103.19 ms     |
 | Electra Bert      | 5.00        | 2.14        | 1.36          | 5.00       | 280.20 ms     |
 | Top2Vec           | 8.50        | 2.18        | 1.30          | 8.50       | 200.20 ms     |
+
 
 
 
