@@ -72,3 +72,65 @@ Project-I/
    Removes or converts special characters and emojis into a usable format.
 10. **Handling Chat Words, Slang, and Typos:**  
     Expands abbreviations, corrects common misspellings, and normalizes informal language.
+
+
+## Architecture
+# Project workflow and architecture diagrams
+
+This document illustrates the end-to-end workflow for the app, including the frontend, backend, authentication, dataset search, and theming.
+
+## System architecture
+
+```mermaid
+flowchart LR
+  subgraph Client [Browser]
+    UI[React + TypeScript + Tailwind]
+  end
+
+  subgraph DevServer [Vite Dev Server / Static Build]
+    VITE["Vite (dev)<br/>Static assets (prod)"]
+  end
+
+  subgraph Backend [Node/Express API]
+    API[Express @ /api]
+    DB(("SQLite DB<br/>server/data/app.db"))
+  end
+
+  subgraph Data [Static Dataset]
+    CSV[(public/data/*.csv)]
+  end
+
+  Client <--> VITE
+  VITE --> UI
+
+  UI -- "/api/* (proxy in dev)" --> API
+  API --> DB
+
+  UI -- "Load CSV (PapaParse)" --> CSV
+
+  classDef group fill:#0b1224,stroke:#3dd1ff,stroke-width:1px,stroke-dasharray: 3 3,color:#c8f1ff;
+  class Client,DevServer,Backend,Data group;
+```
+
+Notes
+- In development, Vite proxies requests from `/api/*` to the Express server (e.g., http://localhost:3001).
+- In production, the React app is built as static files; the API runs separately.
+
+## High-level project workflow (vertical)
+
+This is a simple top-down view similar to common “project workflow” visuals.
+
+```mermaid
+flowchart TD
+  A([Start]) --> B[Open app]
+  B --> C[Login / Signup]
+  C --> D[Token stored]
+  D --> E[Load CSV from public/data]
+  
+  E --> G[Type query]
+  G --> H[Show results list]
+  H --> I([End])
+
+  classDef step fill:#14532d,stroke:#10b981,stroke-width:1px,color:#ecfdf5;
+  class B,C,D,E,F,G,H,I step;
+```
