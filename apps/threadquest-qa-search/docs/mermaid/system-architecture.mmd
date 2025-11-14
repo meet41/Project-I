@@ -1,0 +1,28 @@
+flowchart LR
+  subgraph Client [Browser]
+    UI[React + TypeScript + Tailwind]
+  end
+
+  subgraph DevServer [Vite Dev Server / Static Build]
+    VITE["Vite (dev)<br/>Static assets (prod)"]
+  end
+
+  subgraph Backend [Node/Express API]
+    API[Express @ /api]
+    DB(("SQLite DB<br/>server/data/app.db"))
+  end
+
+  subgraph Data [Static Dataset]
+    CSV[(public/data/*.csv)]
+  end
+
+  Client <--> VITE
+  VITE --> UI
+
+  UI -- "/api/* (proxy in dev)" --> API
+  API --> DB
+
+  UI -- "Load CSV (PapaParse)" --> CSV
+
+  classDef group fill:#0b1224,stroke:#3dd1ff,stroke-dasharray: 3 3,color:#c8f1ff;
+  class Client,DevServer,Backend,Data group;

@@ -1,0 +1,15 @@
+sequenceDiagram
+  actor U as User
+  participant UI as React App (AuthContext)
+  participant API as Express API (/api/auth)
+  participant DB as SQLite (server/data/app.db)
+
+  U->>UI: Submit credentials (login / signup)
+  UI->>API: POST /api/auth/login | /signup
+  API->>DB: Verify/insert user (bcrypt)
+  DB-->>API: Result
+  API-->>UI: 200 { token, user }
+  UI->>UI: Store token (AuthContext/localStorage)
+  UI-->>U: Navigate to protected routes
+  UI->>API: GET /api/auth/me (Bearer token)
+  API-->>UI: User profile

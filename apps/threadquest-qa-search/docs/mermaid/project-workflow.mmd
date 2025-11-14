@@ -1,0 +1,12 @@
+flowchart TD
+  A([Start]) --> B[Open app]
+  B --> C[Login / Signup]
+  C --> D[Token stored]
+  D --> E[Load CSV from public/data]
+  E --> F[Build Fuse.js index]
+  F --> G[Type query]
+  G --> H[Show results list]
+  H --> I[Open detail modal]
+
+  classDef step fill:#14532d,stroke:#10b981,stroke-width:1px,color:#ecfdf5;
+  class B,C,D,E,F,G,H,I step;

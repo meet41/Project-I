@@ -1,0 +1,9 @@
+flowchart TD
+  CSV[(CSV in public/data)] --> PARSE["PapaParse loader<br/>(useDataset hook)"]
+  PARSE --> INDEX[Fuse.js index]
+  INPUT[Search input] --> INDEX
+  INDEX --> RESULTS[ResultsList]
+  RESULTS --> DETAIL[DetailDrawer (centered modal)]
+
+  classDef node fill:#0b1224,stroke:#8b5cf6,color:#e9d5ff;
+  class CSV,PARSE,INDEX,INPUT,RESULTS,DETAIL node;

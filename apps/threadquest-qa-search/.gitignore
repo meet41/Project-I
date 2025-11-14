@@ -1,0 +1,16 @@
+﻿# Node / Vite
+node_modules/
+dist/
+.build/
+coverage/
+*.log
+
+# Env
+.env
+.env.local
+.env.*
+!.env.example
+
+# Editor
+.vscode/
+.DS_Store

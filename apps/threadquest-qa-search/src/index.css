@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    /* Text colors stay Tailwind-driven; background is a soft Gemini/GPT-like gradient */
+    @apply text-slate-900 dark:text-cyan-50 antialiased;
+
+    /* Light mode: soft gray gradient with a subtle indigo glow at the top */
+    background-color: #f8fafc; /* fallback */
+    background-image:
+      radial-gradient(600px circle at 50% -100px, rgba(99, 102, 241, 0.08), transparent 60%),
+      linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%);
+  }
+
+  /* Dark mode background applied when html has class "dark" */
+  html.dark body {
+    /* Lighter, calmer dark theme similar to Gemini/GPT */
+    background-color: #111827; /* fallback (near Tailwind slate-900) */
+    background-image:
+      radial-gradient(1000px circle at 50% -160px, rgba(56, 189, 248, 0.05), transparent 64%),
+      linear-gradient(180deg, #111827 0%, #0f172a 100%);
+  }
+
+  /* Typography improvements */
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-slate-900 dark:text-white font-semibold tracking-tight;
+  }
+}
+
+@layer components {
+  .input-base {
+    @apply w-full rounded-xl bg-white border border-slate-200 px-4 py-3 text-sm 
+           text-slate-900 placeholder-slate-400 shadow-subtle
+           hover:border-indigo-300 hover:shadow-elevation
+           focus:border-indigo-400 focus:ring-2 focus:ring-indigo-100 focus:ring-offset-2 focus:outline-none
+           transition-all duration-200;
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl
+           bg-indigo-600 hover:bg-indigo-500 active:bg-indigo-700
+           px-5 py-2.5 text-sm font-medium text-white
+           shadow-subtle hover:shadow-elevation
+           transform active:scale-[0.98]
+           transition-all duration-200;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl
+           bg-slate-50 hover:bg-slate-100 active:bg-slate-200
+           border border-slate-300 hover:border-slate-400
+           px-4 py-2 text-sm font-medium text-slate-700
+           shadow-subtle hover:shadow-elevation
+           transform active:scale-[0.98]
+           transition-all duration-200;
+  }
+
+  .card {
+    @apply rounded-2xl bg-white border border-slate-200/60
+      dark:bg-slate-900/50 dark:border-cyan-500/20
+      p-5 shadow-subtle hover:shadow-elevation
+      animate-fade-in hover:border-indigo-200 dark:hover:border-cyan-500/30
+      transition-all duration-200;
+  }
+  
+  .badge {
+    @apply inline-flex items-center rounded-full
+      px-2.5 py-0.5 text-xs font-medium
+      bg-indigo-50 text-indigo-700 ring-1 ring-inset ring-indigo-200/60
+      dark:bg-slate-800/70 dark:text-cyan-300 dark:ring-cyan-700/40;
+  }
+
+  .progress-bar {
+    @apply mt-3 h-1.5 overflow-hidden rounded-full bg-slate-100;
+  }
+
+  .progress-bar-fill {
+    @apply h-full rounded-full bg-indigo-600 transition-all duration-500;
+  }
+}
