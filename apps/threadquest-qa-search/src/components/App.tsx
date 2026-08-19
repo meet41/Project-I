@@ -373,6 +373,7 @@ export default function App() {
                     <h4 className="text-cyan-300 font-medium">Meet Patel - ET23BTIT816</h4>
                   </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
