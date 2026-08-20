@@ -12,5 +12,15 @@
     "jsx": "react-jsx",
     "strict": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": [
+    "src/components/App.tsx",
+    "src/components/main.tsx",
+    "src/components/index.css",
+    "src/components/package.json",
+    "src/components/tailwind.config.js",
+    "src/ResultsList.tsx",
+    "src/DetailDrawer.tsx",
+    "src/Footer.tsx"
+  ]
 }
