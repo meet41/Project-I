@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-  <footer className="mt-auto border-t border-slate-200 dark:border-cyan-500/10 bg-white dark:bg-[#111827] py-14">
+    <footer className="mt-auto border-t border-slate-200 dark:border-cyan-500/10 bg-white dark:bg-[#111827] py-14">
       <div className="mx-auto max-w-6xl px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left Section */}
@@ -26,7 +26,7 @@ export default function Footer() {
             <h3 className="text-2xl font-bold text-slate-800 dark:text-cyan-400">
               Project Team
             </h3>
-            
+
             {/* Mentor Card */}
             <div className="relative group">
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-xl opacity-30 blur-xl group-hover:opacity-50 transition-opacity duration-500"></div>
@@ -42,10 +42,10 @@ export default function Footer() {
             <div className="grid grid-cols-1 gap-4">
               {[
                 "Meet Patel - ET23BIT816 <br> Leader",
-                "Hina Padsala - ET23BIT815 <br> Developer",
-                "Hetvi Lad - ET23BIT814 <br> Developer",
-                "Vaishnavi Patel - ET23BIT817 <br> Developer",
-                "Vidhi Patel - ET22BIT105 <br> Developer"
+                // "Hina Padsala - ET23BIT815 <br> Developer",
+                // "Hetvi Lad - ET23BIT814 <br> Developer",
+                // "Vaishnavi Patel - ET23BIT817 <br> Developer",
+                // "Vidhi Patel - ET22BIT105 <br> Developer"
               ].map((member, idx) => (
                 <div key={idx} className="relative group">
                   <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-purple-500 rounded-xl opacity-20 blur-xl group-hover:opacity-40 transition-opacity duration-500"></div>
